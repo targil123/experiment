@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$( window ).resize(function() {
+    var height = $('.navbar').height()+40;
+    $('.main-body').css("margin-top", height+"px");
+});
+
+$(window).load(function(){
+	var height = $('.navbar').height()+40;
+    $('.main-body').css("margin-top", height+"px");
+});
