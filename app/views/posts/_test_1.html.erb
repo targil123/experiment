@@ -1,25 +1,4 @@
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <%= render 'form'%>
-  </div>
-</div>
-
-
-
-<div class ="container main-body">
-  <div >
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Religious Traditions!</h1>
-        <h2>A new blog to share favorite holiday traditions</h2>
-      </div>
-    </div>
-
-  </div>
-
- <%= render  'posts/'+@test %>
-
- <!--  <div class="row">
+<div class="row">
     <div class ="col-xs-4">
       <h3>Christianity</h3>
       <blockquote>I grew up Presbyterian, and we would go to church every Christmas day, as well as every easter, where we help set up a easter egg hunt for the lil kiddos.</blockquote>
@@ -38,49 +17,4 @@
       <blockquote>I'm pretty sure that every single Jewish holiday has basically become an excuse to eat chicken soup and brisket. I don't complain. :)</blockquote>
       <blockquote>For Passover, every year we make chocolate matzo cake and then read the Haggadah as a family. My dad reads through it very quickly so that we can get to the food.</blockquote>
     </div>
-  </div> -->
-
-
-
-</div>
-
-
-<!-- <p>
-<font size = "6"><center><%= link_to 'Share Your Own!', new_post_path %></center></font>
-</p>
-<br></br> -->
-<!-- <table >
-  <thead>
-    <tr>
-      <th align="left"><font size="4">More Traditions</font></th>
-    </tr>
-  </thead> -->
-
-  <tbody>
-    <% @posts.each do |post| %>
-    <tr>
-
-        <!-- <td ><%= post.body %></td>
-      --><!-- <td><%= link_to "Show", post %></td> -->
-        <!-- <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
-
-  <br>
-
-
-
-
-
-
-<!-- <form>
-<br></br>
-  <center><label for="new_post">Share your own!</label></center>
-  <center><textarea id="new_post" cols = "70" rows="5"></textarea></center>
-  <center><input type="submit" value="Share!"/></center>
-</form>
--->
-
+  </div>

@@ -5,7 +5,9 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     session["init"] = true
-    Userinfo.create(session_id: request.session_options[:id])
+    @test = ['test_1', 'test_2'].sample
+
+    Userinfo.create(session_id: request.session_options[:id], test_id: @test)
     
     @posts = Post.all
     @post = Post.new
