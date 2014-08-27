@@ -11,7 +11,6 @@
     </div>
   <% end %>
   <center>
-  <p><font size="4">Add your own tradition!</font></p>
   <div class="field btn btn-default">
     <%= f.radio_button(:religion, :christianity) %>
     <%= f.label(:religion_christianity, "Christianity") %>
@@ -26,11 +25,10 @@
     <%= f.text_field :title %> -->
   </div>
   <div class="field" >
-
-    <%= f.text_area :body, :rows=>"7", :cols=>"50"%>
+    <%= f.text_area :body, :rows=>"2", :cols=>"70", :placeholder=>"Add your own tradition."%>
   </div>
   <div class="actions">
-    <%= f.submit "Share yours", class: 'btn btn-black' %>
+    <%= f.submit "Submit", class: 'btn btn-black' %>
   </div>
 </center>
 <% end %>
