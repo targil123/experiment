@@ -12,20 +12,20 @@
   <% end %>
   <center>
   <div class="field btn btn-default">
-    <%= f.radio_button(:religion, :christianity) %>
+    <%= f.radio_button(:religion, :christianity, required: true ) %>
     <%= f.label(:religion_christianity, "Christianity") %>
-    <%= f.radio_button(:religion, :islam) %>
+    <%= f.radio_button(:religion, :islam, required: true ) %>
     <%= f.label(:religion_islam, "Islam") %>
-    <%= f.radio_button(:religion, :judaism) %>
+    <%= f.radio_button(:religion, :judaism, required: true ) %>
     <%= f.label(:religion_judaism, "Judaism") %>
-    <%= f.radio_button(:religion, :other) %>
+    <%= f.radio_button(:religion, :other, required: true ) %>
     <%= f.label(:religion_other, "Other") %>
     <!-- <br></br>
     <%= f.label :title %>
     <%= f.text_field :title %> -->
   </div>
   <div class="field" >
-    <%= f.text_area :body, :rows=>"2", :cols=>"70", :placeholder=>"Add your own tradition."%>
+    <%= f.text_area :body, :rows=>"2", :cols=>"70", :placeholder=>"Add your own tradition.", required: true %>
   </div>
   <div class="actions">
     <%= f.submit "Submit", class: 'btn btn-success' %>
