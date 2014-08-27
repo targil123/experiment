@@ -16,11 +16,11 @@
 //= require_tree .
 
 $( window ).resize(function() {
-    var height = $('.navbar').height()+40;
+    var height = $('.navbar').height()+10;
     $('.main-body').css("margin-top", height+"px");
 });
 
 $(window).load(function(){
-	var height = $('.navbar').height()+40;
+	var height = $('.navbar').height()+10;
     $('.main-body').css("margin-top", height+"px");
 });
