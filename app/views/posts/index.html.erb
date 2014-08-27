@@ -1,0 +1,95 @@
+<!-- <TABLE   WIDTH="100%"   CELLPADDING="4" CELLSPACING="3">
+   
+   <TR>
+      <TH COLSPAN="3" ><BR><h1 style = "padding:2em"><font size="7" color="orange">Religious Traditions!</font> <br></br>A new blog to share favorite holiday traditions</h1>
+      </TH>
+   </TR>
+   <TR>
+      <TH ><font size="4">Christianity</font></TH>
+      <TH><font size="4">Islam</font></TH>
+      <TH><font size="4">Judaism</font></TH>
+   </TR>
+   <div >
+      <TD valign = "top"><blockquote>I grew up Presbyterian, and we would go to church every Christmas day, as well as every easter, where we help set up a easter egg hunt for the lil kiddos.</blockquote></TD>
+      <TD valign = "top">
+        <blockquote>For Eid, I make cards to distribute and banners and bunting for the house. We put up lights and balloons. We send sweets and a card to each of our children's classes.</blockquote>
+      <blockquote> Me and my family fast on Ramadan. Iftar is the time we eat at sunset, it's really fun cause the whole family gets together and we have a lot of guests. </blockquote>
+      <blockquote>I did celebrate Eid Al Fitr and there's huge amounts of food (end of Ramadan, hello!), a large prayer, and everyone dresses their very best.</blockquote>
+
+       </TD>
+      <TD valign = "top"><blockquote>My wife's family is Israeli, so for each Jewish holiday, we make them say all the hard prayers. They do it real quick!</blockquote>
+        <blockquote> Each winter, my parents never wanted me to put up lights for Hanukkah because it felt too conformist. But it's the festival of lights! So now that I'm grown, we do.</blockquote>
+        <blockquote>I'm pretty sure that every single Jewish holiday has basically become an excuse to eat chicken soup and brisket. I don't complain. :)</blockquote>
+        <blockquote>For Passover, every year we make chocolate matzo cake and then read the Haggadah as a family. My dad reads through it very quickly so that we can get to the food.</blockquote>
+    </TD>
+    
+   </TR>
+</TABLE>
+<br></br> -->
+
+
+<h1> <center>Religious Traditions!</center></h1>
+<h2>A new blog to share favorite holiday traditions</h2>
+<div class ="container">
+  <div class="row">
+    <div class ="col-md-4">
+      <blockquote>I grew up Presbyterian, and we would go to church every Christmas day, as well as every easter, where we help set up a easter egg hunt for the lil kiddos.</blockquote>
+      </div>
+    <div class ="col-md-4">
+      <blockquote>For Eid, I make cards to distribute and banners and bunting for the house. We put up lights and balloons. We send sweets and a card to each of our children's classes.</blockquote>
+      <blockquote> Me and my family fast on Ramadan. Iftar is the time we eat at sunset, it's really fun cause the whole family gets together and we have a lot of guests. </blockquote>
+      <blockquote>I did celebrate Eid Al Fitr and there's huge amounts of food (end of Ramadan, hello!), a large prayer, and everyone dresses their very best.</blockquote>
+  
+    </div>
+    <div class ="col-md-4">
+      <blockquote>My wife's family is Israeli, so for each Jewish holiday, we make them say all the hard prayers. They do it real quick!</blockquote>
+        <blockquote> Each winter, my parents never wanted me to put up lights for Hanukkah because it felt too conformist. But it's the festival of lights! So now that I'm grown, we do.</blockquote>
+        <blockquote>I'm pretty sure that every single Jewish holiday has basically become an excuse to eat chicken soup and brisket. I don't complain. :)</blockquote>
+        <blockquote>For Passover, every year we make chocolate matzo cake and then read the Haggadah as a family. My dad reads through it very quickly so that we can get to the food.</blockquote>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<!-- <p>
+<font size = "6"><center><%= link_to 'Share Your Own!', new_post_path %></center></font>
+</p>
+<br></br> -->
+<!-- <table >
+  <thead>
+    <tr>
+      <th align="left"><font size="4">More Traditions</font></th>
+    </tr>
+  </thead> -->
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+
+        <!-- <td ><%= post.body %></td>
+         --><!-- <td><%= link_to "Show", post %></td> -->
+        <!-- <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= render 'form'%>
+
+
+
+
+<!-- <form>
+<br></br>
+  <center><label for="new_post">Share your own!</label></center>
+  <center><textarea id="new_post" cols = "70" rows="5"></textarea></center>
+  <center><input type="submit" value="Share!"/></center>
+</form>
+ -->
+

@@ -1,0 +1,36 @@
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <center>
+  <p><font size="4">Add your own tradition!</font></p>
+  <div class="field btn btn-default">
+    <%= f.radio_button(:religion, :christianity) %>
+    <%= f.label(:religion_christianity, "Christianity") %>
+    <%= f.radio_button(:religion, :islam) %>
+    <%= f.label(:religion_islam, "Islam") %>
+    <%= f.radio_button(:religion, :judaism) %>
+    <%= f.label(:religion_judaism, "Judaism") %>
+    <%= f.radio_button(:religion, :other) %>
+    <%= f.label(:religion_other, "Other") %>
+    <!-- <br></br>
+    <%= f.label :title %>
+    <%= f.text_field :title %> -->
+  </div>
+  <div class="field" >
+
+    <%= f.text_area :body, :rows=>"7", :cols=>"50"%>
+  </div>
+  <div class="actions">
+    <%= f.submit "Share yours", class: 'btn btn-black' %>
+  </div>
+</center>
+<% end %>

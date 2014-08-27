@@ -1,0 +1,36 @@
+@import "bootstrap";
+.btn-black {
+  color:#000;
+  background-color: #FFE5B4;
+  &:hover,
+  &:focus{
+    color: #fb5;
+  }
+}
+
+h1 {
+  background-color:#FFE5B4;
+  color:#000000;
+  margin-top:10px;
+  font-weight:bold;
+  height:90px;
+  padding-top:20px;
+  text-align:center;
+
+}
+h2 {
+  background-color:#FFE5B4;
+  color:#ff0000;
+  margin-top:-10px;
+  text-align:center;
+  height:40px;
+
+}
+.post-text{
+  font-size:25px;
+  line-height: 1.2;
+}
+div {
+  margin-top:10px;
+
+}
