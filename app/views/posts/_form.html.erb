@@ -11,6 +11,10 @@
     </div>
   <% end %>
   <center>
+  
+  <div class="field" >
+    <%= f.text_area :body, :rows=>"2", :cols=>"70", :placeholder=>"Add your own tradition.", required: true %>
+  </div>
   <div class="field btn btn-default">
     <%= f.radio_button(:religion, :christianity, required: true ) %>
     <%= f.label(:religion_christianity, "Christianity") %>
@@ -23,9 +27,6 @@
     <!-- <br></br>
     <%= f.label :title %>
     <%= f.text_field :title %> -->
-  </div>
-  <div class="field" >
-    <%= f.text_area :body, :rows=>"2", :cols=>"70", :placeholder=>"Add your own tradition.", required: true %>
   </div>
   <div class="actions">
     <%= f.submit "Submit", class: 'btn btn-success' %>
