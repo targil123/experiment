@@ -1,0 +1,10 @@
+Searching 253 files for "test_1" (case sensitive)
+
+/Users/gili/experiment/app/controllers/posts_controller.rb:
+    6    def index
+    7      session["init"] = true
+    8:     @test = ['test_1', 'test_2','test_3'].sample
+    9  
+   10      Userinfo.create(session_id: request.session_options[:id], test_id: @test)
+
+1 match in 1 file
