@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140827220949) do
+ActiveRecord::Schema.define(version: 20140908224222) do
 
   create_table "posts", force: true do |t|
     t.string   "title"
@@ -27,7 +27,15 @@ ActiveRecord::Schema.define(version: 20140827220949) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "test_id"
-    t.string   "click_id"
+    t.string   "utm_term"
+    t.string   "utm_campaign"
+    t.string   "matchtype"
+    t.string   "device"
+    t.string   "devicemodel"
+    t.string   "creative"
+    t.string   "keyword"
+    t.string   "aceid"
+    t.string   "adposition"
   end
 
 end

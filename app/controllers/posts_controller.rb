@@ -7,7 +7,7 @@ class PostsController < ApplicationController
     session["init"] = true
     @test = ['test_1', 'test_2','test_3'].sample
 
-    Userinfo.create(session_id: request.session_options[:id], test_id: @test)
+    Userinfo.create(session_id: request.session_options[:id], test_id: @test, utm_term: params[:utm_term], utm_campaign: params[:utm_campaign], matchtype: params[:matchtype], device: params[:device], devicemodel: params[:devicemodel], creative: params[:creative], keyword: params[:keyword], aceid: params[:aceid], adposition: params[:adposition])
     
     @posts = Post.all
     @post = Post.new
